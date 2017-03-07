@@ -2,7 +2,7 @@
 $whatever = $_POST['whatever'];
 $username = $_POST['username'];
 $email = $_POST['email'];
-$usermessage = $_POST['usermessage'];
+$user_message = $_POST['user_message'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
@@ -19,7 +19,7 @@ $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, 
 $mail->Port = 465;                                    // TCP port to connect to
 
 $mail->setFrom('tunerauto@inbox.ru', 'Ildar S. Zhiganshin');
-$mail->addAddress('111970@mail.ru', 'Joe User');     // Add a recipient
+$mail->addAddress('olgaz2403@mail.ru', 'Joe User');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
